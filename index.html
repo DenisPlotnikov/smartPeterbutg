@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="style.css">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная страница</title>
+</head>
+<body>
+   <h1>Добро пожаловать на наш сайт!</h1>
+  <nav>
+    <a href="#">Главная</a>
+    <a href="4.index.html">О нас</a>
+    <a href="2.index.html">Связаться с нами</a>
+    <a href="#openModal">Регистрация</a>
+  </nav>
+    <div id="openModal" class="modal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title">Регистрация</h3>
+            <a href="#close" title="Close" class="close">×</a>
+          </div>
+          <div class="modal-body">    
+            <form action="action_page.php">
+              <div class="container">
+                <h1>Регистрация</h1>
+                <p>Пожалуйста, введите следующие данные ниже для регистрации на сайте.</p>
+                <hr>
+            
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Email" name="email" required>
+            
+                <label for="psw"><b>Пароль</b></label>
+                <input type="password" placeholder="Пароль" name="psw" required>
+            
+                <label for="psw-repeat"><b>Потверждение пароля</b></label>
+                <input type="password" placeholder="Потверждение пароля" name="psw-repeat" required>
+                <hr>
+            
+                <p>При создании аккаунта, вы принимаете <a href="#">Политику конфидициальности</a>.</p>
+                <button type="submit" class="registerbtn">Зарегистрироваться</button>
+              </div>
+            
+              <div class="container signin">
+                <p>Уже есть аккаунт? <a href="#">Войти</a>.</p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+</html>
